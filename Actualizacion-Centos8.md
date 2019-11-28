@@ -114,5 +114,26 @@ sudo rpm --nodeps -e gdbm
 sudo dnf -y upgrade --best --allowerasing
 ~~~
 
+A continuación, se actualiza python3, para ello en primer lugar se actualiza el repositorio epel a la última versión:
+~~~
+sudo dnf remove epel-release
+sudo dnf install epel-release
+~~~
 
+Se actualiza python3:
+~~~
+sudo dnf update
+sudo dnf install python3
+sudo dnf install python3 --allowerasing
+sudo dnf update
+sudo dnf update --allowerasing
+sudo dnf update
+~~~
 
+Por último, hay que instalar el kernel:
+~~~
+sudo dnf --enablerepo=elrepo-kernel install kernel-ml
+sudo rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
+sudo dnf install https://www.elrepo.org/elrepo-release-8.0-2.el8.elrepo.noarch.rpm
+sudo dnf --enablerepo=elrepo-kernel install kernel-ml
+~~~
