@@ -1,1 +1,6 @@
-# Actualizacion-Centos8
+# [Actualización Centos8](https://github.com/PalomaR88/Actualizacion_Centos8/blob/master/Actualizacion-Centos8.md#actualizacion-centos-7-a-centos-8)
+## 1. [Preparar Centos7](https://github.com/PalomaR88/Actualizacion_Centos8/blob/master/Actualizacion-Centos8.md#preparar-centos7)
+## 2. [Reemplazar yum en Centos](https://github.com/PalomaR88/Actualizacion_Centos8/blob/master/Actualizacion-Centos8.md#reemplazar-yum-en-centos)
+## 3. [Actualización](https://github.com/PalomaR88/Actualizacion_Centos8/blob/master/Actualizacion-Centos8.md#actualizaci%C3%B3n)
+## 4. [Verificación](https://github.com/PalomaR88/Actualizacion_Centos8/blob/master/Actualizacion-Centos8.md#verificaci%C3%B3n)
+## 5. [Últimas configuraciones](https://github.com/PalomaR88/Actualizacion_Centos8/blob/master/Actualizacion-Centos8.md#%C3%BAltimas-configuraciones)
