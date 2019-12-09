@@ -1,7 +1,6 @@
+# Actualizacion Centos 7 a Centos 8
 
-#Actualizacion Centos 7 a Centos 8
-
-## PReparar Centos7
+## Preparar Centos7
 
 Descargar e instalar el repositorio EPEL:
 ~~~
@@ -24,6 +23,8 @@ sudo package-cleanup --leaves
 package-cleanup --orphans
 ~~~
 
+## Reemplazar yum en Centos
+
 Descargar el administrador de paquetes DNF, basado en RPM:
 ~~~
 sudo yum -y install dnf
@@ -44,6 +45,7 @@ Actualizar el sistema con dnf:
 sudo dnf -y upgrade
 ~~~
 
+## Actualización
 Instalación de la nueva versión:
 ~~~
 sudo dnf -y upgrade http://mirror.bytemark.co.uk/centos/8/BaseOS/x86_64/os/Packages/centos-release-8.0-0.1905.0.9.el8.x86_64.rpm
@@ -74,6 +76,8 @@ Lanzar la actualización:
 sudo dnf -y --releasever=8 --allowerasing --setopt=deltarpm=false distro-sync
 ~~~
 
+## Verificación
+
 Verificar y mantener, por defecto, los paquetes rpm con la nueva configuración:
 ~~~
 sudo rpmconf -a
@@ -91,6 +95,8 @@ ROOTDEV=`ls /dev/*da|head -1`;
 sudo echo "Detected root as $ROOTDEV..."
 sudo grub2-install $ROOTDEV
 ~~~
+
+## Últimas configuraciones
 
 Instalación del paquete Minimal:
 ~~~
